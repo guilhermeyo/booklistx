@@ -16,7 +16,8 @@ defmodule BooklistxWeb.Router do
   scope "/", BooklistxWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    # get "/", PageController, :index
+    resources "/", BookController
   end
 
   # Other scopes may use custom stacks.
